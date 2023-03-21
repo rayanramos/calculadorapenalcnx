@@ -894,7 +894,7 @@
 		});
 		
 
-		// Nix 08/07/2022
+		// Kb 21/03/2023
 		$("#delacao-premiada").focusout(function () {
 			if ($("#delacao-premiada")[0].value < 0 && $("#delacao-premiada")[0].value > 100) {
 				alert("Informe um valor válido entre 0 a 100%")
@@ -990,7 +990,7 @@
 			}
 
 		})
-		// Nix 08/07/2022
+		// Kb 21/03/2023
 		$("#reu-primario").change(function () {
 			var pena_txt = document.getElementById("pena");
 			var penaReduzir = 0;
@@ -1044,9 +1044,9 @@
 
 
 		});
-		// Nix 08/07/2022
+		// Kb 21/03/2023
 
-		// Nix 08/07/2022
+		// Kb 21/03/2023
 		function recalcularPena() {
 			var pena_txt = document.getElementById("pena");
 			var fianca_txt = document.getElementById("fianca");
@@ -1090,7 +1090,7 @@
 				fianca_txt.value = "R$" + Fianca.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
 			}
 		}
-		// Nix 08/07/2022
+		// Kb 21/03/2023
 		$("#advogado-30").change(function () {
 			if($(".TextoArtigos")[0].value  == ""){
 				$("#advogado-30")[0].checked = false;
