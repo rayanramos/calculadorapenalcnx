@@ -738,7 +738,7 @@
 			<h4>⚖️ PENA:</h4>
 			<input type="text" id="pena" name="pena" class="form-control" readonly="true" size="2" style="margin-right:5px">
 				<div class="alert alert-success" id="penamaxima" style="display: none;" role="alert">
-					A pena total do mesmo excedeu 200 MESES.
+					A pena total do mesmo excedeu 100 MESES.
 				</div>
 				
 			<h4>💸 MULTA: </h4> <input type="text" id="multa" name="multa" class="form-control" readonly="true" size="5" style="margin-right:15px">
@@ -1077,11 +1077,11 @@
 				}
 			}
 			if($("#mandado")[0].checked == false) {
-				if (Pena > 200) {
+				if (Pena > 300) {
 					Pena = 300;
 				}
 			} else{
-				if (Pena > 300){
+				if (Pena > 100){
 					Pena = 100;
 				}
 			} 
@@ -1234,8 +1234,8 @@
 				}
 			}
 			if($("#mandado")[0].checked == false) {
-				if (Pena > 200) {
-					Pena = 200;
+				if (Pena > 300) {
+					Pena = 300;
 					$("#penamaxima")[0].style.display = 'block'
 					const timeOut = setTimeout(tirarPena, 3000);
 				}
